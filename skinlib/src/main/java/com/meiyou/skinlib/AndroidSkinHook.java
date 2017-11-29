@@ -64,7 +64,7 @@ public class AndroidSkinHook {
         });
     }
 
-    private void hookLayoutInflater(Context context) {
+    private LayoutInflater hookLayoutInflater(Context context) {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         try {
             Field field = LayoutInflater.class.getDeclaredField("mFactorySet");
@@ -74,6 +74,8 @@ public class AndroidSkinHook {
         } catch (NoSuchFieldException | IllegalArgumentException | IllegalAccessException e) {
             e.printStackTrace();
         }
+        AndroidSkin.getInstance().setLayoutInflater(layoutInflater);
+        return layoutInflater;
     }
 
 }
