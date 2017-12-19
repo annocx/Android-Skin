@@ -148,6 +148,12 @@ AndroidSkin.getInstance().addCustomAttrSupport(R.attr.tv_border_color,
             });
 ```
 
+#### Fragment换肤注意事项
+
+fragment的onCrateView用来inflate的对象必须是AndroidSkin.getLayoutInflater();
+
+
+
 ### 4、打包皮肤包
 
 和普通的打包apk包一样，将同名资源在对应的res文件夹下即可，具体请参考project的skinone和skintwo；
