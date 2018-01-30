@@ -72,6 +72,8 @@ public class MutableAttrFactory {
             case DRAWABLE_RIGHT:
             case DRAWABLE_BOTTOM:
                 return new DrawableLRTBAttr(type.getRealName(), attrName, attrValueRefId, attrValueRefName, typeName);
+            case FONTFAMILY:
+                return new FontAttr(attrName, attrValueRefId, attrValueRefName, typeName);
         }
         return null;
     }
