@@ -43,5 +43,6 @@ dependencies {
     //compile 'com.meiyou:android-skin:1.0.3'
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
 
 }

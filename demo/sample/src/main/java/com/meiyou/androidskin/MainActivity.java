@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.meiyou.androidskin.databinding.DatabindingActivity;
+import com.meiyou.androidskin.recycleview.RecycleViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
     public void onSkinChange(View view){
         Intent intent = new Intent();
         intent.setClass(this,SkinSelectActivity.class);
+        startActivity(intent);
+    }
+
+    public void onRecycleView(View view){
+        Intent intent = new Intent();
+        intent.setClass(this,RecycleViewActivity.class);
         startActivity(intent);
     }
 

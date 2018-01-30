@@ -39,7 +39,7 @@
         </activity>
         <activity android:name=".SkinSelectActivity"/>
         <activity android:name=".databinding.DatabindingActivity"/>
-
+        <activity android:name=".recycleview.RecycleViewActivity"/>
     </application>
 
 </manifest>
