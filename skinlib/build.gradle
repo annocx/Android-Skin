@@ -41,4 +41,5 @@ dependencies {
     website = 'https://github.com/iceAnson/Android-Skin.git'
 }*/
 
-apply from: 'https://raw.githubusercontent.com/HomHomLin/GradlePublishing/master/android.gradle'
+//apply from: 'https://raw.githubusercontent.com/HomHomLin/GradlePublishing/master/android.gradle'
+apply from:'./android.gradle'
